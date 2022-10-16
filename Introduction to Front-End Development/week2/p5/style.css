@@ -1,0 +1,69 @@
+/* Element selector */
+h1 {
+    color: purple;
+}
+
+/* ID selector */
+#latest {
+    color: white;
+    font-size: xx-large;
+    background-color: grey;
+}
+
+/* Class selector */
+.paragraph {
+    color: blue;
+    font-size: large;
+    background-color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.headers{
+    margin-right: 20px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+/* Element with class selector */
+h2.headers {
+    color: green;
+    font-size: x-large;
+    background-color: white;
+    text-decoration: underline overline black solid;
+    text-decoration-thickness: 5px;
+    text-align: center;
+}
+
+/* ID selector*/
+#blog {
+    color: white;
+    font-size: xx-large;
+    background-color: grey;
+}
+
+/* Descendant selector */
+#blog div p {
+    margin-top: 1in;
+}
+
+/* Child selector */
+#blog > div {
+    margin-top: 1in;
+}
+
+#latest:hover {
+    color: red;
+    background-color: white;
+}
+
+.parent {
+    border: 4px solid red;
+}
+.child {
+    width: 50%;
+    padding: 20px;
+    border: 4px solid green;
+    margin: left;
+    float: right;
+  }
