@@ -1,0 +1,22 @@
+.box{
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:flex-end;
+    gap:10px;
+    /* flex-grow: 0, flex-shrink: 1, flex-basis: 1 */
+    flex: 0 1 auto;
+}
+.box3{
+    background-color: rgb(192, 114, 181);
+    align-self: center;
+    flex: 1 1 auto;
+}
