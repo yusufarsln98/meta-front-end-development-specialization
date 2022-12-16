@@ -1,6 +1,6 @@
 import "./App.css";
 import { ThemeProvider, useTheme } from "./ThemeContext";
-import Switch from "./Switch";
+import Switch from "./Switch/Switch";
 
 const Title = ({ children }) => {
   const { theme } = useTheme();

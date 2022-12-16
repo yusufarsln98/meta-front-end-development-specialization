@@ -1,8 +1,10 @@
 import React from "react";
+import { UserProvider, useUser } from "./UserContext";
 
 const LoggedInUser = () => {
+    const { user } = useUser();
     return (
-        <p>Hello <span className="Username"></span></p>
+        <p>Hello <span className="Username">{user.name}</span></p>
     );
 }
 
@@ -16,6 +18,7 @@ const Header = () => {
 }
 
 const Page = () => {
+    const { user } = useUser();
     return (
         <div>
             <h2>What is lorem ipsum</h2>
@@ -32,18 +35,20 @@ const Page = () => {
                 nisl eu ante. Nullam euismod, nisl nec tincidunt lacinia, nunc
                 est ultrices nunc, vel tincidunt ante nisl eu ante.
             </p>
-            <p>Written by </p>
+            <p>Written by {user.name}</p>
         </div>
     );
 }
 
 function ContextAPI() {
     return (
-        <div>
-            <h1>Context API Practice</h1>
-            <Header />
-            <Page />
-        </div>
+        <UserProvider>
+            <div>
+                <h1>Context API Practice</h1>
+                <Header />
+                <Page />
+            </div>
+        </UserProvider>
     );
 }
 export default ContextAPI

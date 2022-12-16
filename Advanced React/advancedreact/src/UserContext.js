@@ -9,7 +9,7 @@ export const UserProvider = ({ children }) => {
         dob: "01/01/2000",
     });
     return (
-        <UserContext.Provider value={{user}}></UserContext.Provider>
+        <UserContext.Provider value={{user}}> {children} </UserContext.Provider>
     );
 }
 
