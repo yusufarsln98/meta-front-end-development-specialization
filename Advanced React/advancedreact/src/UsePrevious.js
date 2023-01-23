@@ -31,11 +31,12 @@ function UsePrevious() {
     </div>
   );
 }
+
 function usePrevious(val) {
   const ref = useRef();
   useEffect(() => {
     ref.current = val;
-  }, [val]);
+  }, [val]);    // Only re-run if val changes - Dependency array
   return ref.current;
 }
 
