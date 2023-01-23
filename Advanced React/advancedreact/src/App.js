@@ -8,11 +8,12 @@ import Keys from './Keys';
 import ControlledInputs from './ConrolledInputs';
 import RegistrationForm from './RegistrationForm';
 import ContextAPI from './ContextAPI';
+import UseReducerHook from './UseReducerHook';
+import UseRefHook from './UseRefHook';
 
 
 function App() {
   return (
-    
     <div className="App">
       <nav>
         <Link to="/" className="nav-item">Homepage</Link>
@@ -22,6 +23,8 @@ function App() {
         <Link to="/controlled-inputs" className='nav-item'>Controlled Inputs</Link>
         <Link to="/registration-form" className='nav-item'>Registration Form</Link>
         <Link to="/context-api" className='nav-item'>Context API</Link>
+        <Link to="/use-reducer-hook" className='nav-item'>Use Reducer Hook</Link>
+        <Link to="/use-ref-hook" className='nav-item'>Use Ref Hook</Link>
       </nav>
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
@@ -31,6 +34,8 @@ function App() {
         <Route path="/controlled-inputs" element={<ControlledInputs />}></Route>
         <Route path="/registration-form" element={<RegistrationForm />}></Route>
         <Route path="/context-api" element={<ContextAPI />}></Route>
+        <Route path="/use-reducer-hook" element={<UseReducerHook />}></Route>
+        <Route path="/use-ref-hook" element={<UseRefHook />}></Route>
       </Routes>
     </div>
   );
