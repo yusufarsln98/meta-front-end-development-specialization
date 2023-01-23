@@ -10,7 +10,7 @@ import RegistrationForm from './RegistrationForm';
 import ContextAPI from './ContextAPI';
 import UseReducerHook from './UseReducerHook';
 import UseRefHook from './UseRefHook';
-
+import UsePrevious from './UsePrevious';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
         <Link to="/context-api" className='nav-item'>Context API</Link>
         <Link to="/use-reducer-hook" className='nav-item'>Use Reducer Hook</Link>
         <Link to="/use-ref-hook" className='nav-item'>Use Ref Hook</Link>
+        <Link to="/use-previous" className='nav-item'>Use Previous</Link>
       </nav>
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
@@ -36,6 +37,7 @@ function App() {
         <Route path="/context-api" element={<ContextAPI />}></Route>
         <Route path="/use-reducer-hook" element={<UseReducerHook />}></Route>
         <Route path="/use-ref-hook" element={<UseRefHook />}></Route>
+        <Route path="/use-previous" element={<UsePrevious />}></Route>
       </Routes>
     </div>
   );
