@@ -11,7 +11,9 @@ import ContextAPI from './ContextAPI';
 import UseReducerHook from './UseReducerHook';
 import UseRefHook from './UseRefHook';
 import UsePrevious from './UsePrevious';
-
+import ConfirmationDialog from './Props';
+import LiveOrders from './ReactApiExamples';
+import SpreadOperator from './SpreadOperator';
 function App() {
   return (
     <div className="App">
@@ -26,6 +28,9 @@ function App() {
         <Link to="/use-reducer-hook" className='nav-item'>Use Reducer Hook</Link>
         <Link to="/use-ref-hook" className='nav-item'>Use Ref Hook</Link>
         <Link to="/use-previous" className='nav-item'>Use Previous</Link>
+        <Link to="/props" className='nav-item'>Props</Link>
+        <Link to="/react-api-examples" className='nav-item'>React API Examples</Link>
+        <Link to="/spread-operator" className='nav-item'>Spread Operator</Link>
       </nav>
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
@@ -38,6 +43,9 @@ function App() {
         <Route path="/use-reducer-hook" element={<UseReducerHook />}></Route>
         <Route path="/use-ref-hook" element={<UseRefHook />}></Route>
         <Route path="/use-previous" element={<UsePrevious />}></Route>
+        <Route path="/props" element={<ConfirmationDialog />}></Route>
+        <Route path="/react-api-examples" element={<LiveOrders />}></Route>
+        <Route path="/spread-operator" element={<SpreadOperator />}></Route>
       </Routes>
     </div>
   );
