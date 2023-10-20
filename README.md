@@ -13,10 +13,11 @@ Courses I have completed:
 - [x]  [Version Control](https://www.coursera.org/account/accomplishments/certificate/5KY7RM7A56VH "Version Control")
 - [x]  [HTML and CSS in depth](https://coursera.org/share/393d51d9bba3968e121a14dc2162da81 "HTML and CSS in depth")
 - [x]  [React Basics](https://coursera.org/share/bc998150633665c1676d5a1ec1989865 "React Basics")
+- [x] Advanced React
+(https://www.coursera.org/account/accomplishments/certificate/6P394K5P23ZU)
 
 Courses I attended:
 
-- [ ] Advanced React
 - [ ] Principles of UX/UI Design
 - [ ] Front-End Developer Capstone 
 - [ ] Coding Interview Preparation
